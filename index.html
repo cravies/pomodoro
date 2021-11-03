@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>In-browser pomodoro timer for productivity.</title>
+<link rel = "stylesheet"
+    type = "text/css"
+    href = "indexstyle.css" />
 </head>
 
 <body>
+<div class="text">
+<h2 style="color:red">
+🍅 ⏲️ Pomodoro Timer ⏲️ 🍅
+</h2>
 
-<h1 style="color:red">
-Ben's Extra Special Custom Spicy Pomodoro Timer.
-</h1>
-
-<p id="timer">
+<h1 id="timer">
 I'm the timer.
-</p>
+</h1>
 
 <button onclick="set_true();start_pomo();" id="start">Start</button> 
 <button onclick="pause_pomo()" id="pause">Pause</button>
@@ -22,6 +26,7 @@ I'm the timer.
 <em> "A journey of a thousand miles begins with a single step"</em>
 - Laozi
 </p>
+</div>
 
 <script src="./timer.js">
 </script>

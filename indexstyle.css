@@ -1,0 +1,52 @@
+body {
+    background-color: #1d2021;
+    color: #ebdbb2;
+}
+
+a {
+    color: #689d6a;
+}
+
+h1 {
+	color: #f2f2f2;
+}
+
+h2 {
+	color: #f2f2f2;
+}
+
+#image_box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#image_box figcaption{
+    font-style: italic;
+    text-align: center;
+    padding: 8px;
+}
+
+/*formatting for timer*/
+/*Idea.. time gradually goes from red to green*/
+#timer {
+    color: red;
+}
+
+.text {
+    text-align: center;
+}
+
+/* stuff for horizontally aligning divs*/
+
+.parent {
+    margin-bottom: 15px;
+    padding: 10px;
+    clear:both;
+}
+.left, .center, .right{
+    float:left;
+    width:30%;
+    padding:8px;
+}
