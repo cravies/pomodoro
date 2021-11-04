@@ -31,7 +31,19 @@ h2 {
 /*formatting for timer*/
 /*Idea.. time gradually goes from red to green*/
 #timer {
+    text-align: center;
     color: red;
+    display: inline;
+    border: 2px;
+    border-style: double;
+    border-color: #f2f2f2;
+    border-width: medium;
+    padding: 5px;
+}
+
+/*block display for timer buttons*/
+.buttons{
+    display: block;
 }
 
 .text {
