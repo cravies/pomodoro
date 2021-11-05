@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>To-do list</title>
+<link rel = "stylesheet"
+    type = "text/css"
+    href = "indexstyle.css" />
+</head>
+
+<body>
+<div class="navigation">
+    <a href="index.html">Pomodoro Timer</a>
+    <a class="active" href="todo.html">To-do list</a>
+</div>
+
+<div class="text">
+<h2 id="header">
+☑️  To-do list ☕
+</h2>
+
+<form action="javascript:new_task()">
+  <label for="fname">Insert new task:</label><br>
+  <input type="text" id="newtask" name="newtask"><br>
+  <input type="submit" value="Submit">
+</form> 
+<br>
+<h2> 
+📚 Tasks to do: 📚
+</h2>
+<br>
+<form id="tasks">
+</form>
+<br>
+<ul id="tasks_done">
+</ul>
+
+<p id="done">
+Pomodoros done: 0
+</p>
+
+<p id="quote">
+<em> "I can do all things through him who strengthens me"</em>
+- Philippians 4:13
+</p>
+</div>
+
+<script src="./todo.js">
+</script>
+
+</body>
+
+</html> 
