@@ -19,21 +19,31 @@
 ☑️  To-do list ☕
 </h2>
 
-<form action="javascript:new_task()">
-  <label for="fname">Insert new task:</label><br>
-  <input type="text" id="newtask" name="newtask"><br>
-  <input type="submit" value="Submit">
-</form> 
-<br>
+<div class="row">
+<div class="column">
 <h2> 
 📚 Tasks to do: 📚
 </h2>
-<br>
 <form id="tasks">
 </form>
-<br>
+<button onclick="tasks_done()">Tasks done</button>
+</div>
+<div class="column">
+<h2> 
+📚 Tasks completed: 📚
+</h2>
 <ul id="tasks_done">
 </ul>
+</div>
+</div>
+
+<div style="display:block">
+<form action="javascript:new_task()">
+  <label for="fname" style="display:block">Insert new task:</label><br>
+  <input type="text" id="newtask" name="newtask"><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
 
 <p id="done">
 Pomodoros done: 0
