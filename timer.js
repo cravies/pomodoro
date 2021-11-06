@@ -1,5 +1,5 @@
-var mins=25;
-var seconds=0;
+var mins=0;
+var seconds=5;
 var running=false;
 var default_str="25:00 remaining";
 var looper;
@@ -23,15 +23,15 @@ function start_pomo() {
                 pomos_done = pomos_done + 1;
                 on_break=true;
                 set_break();
-                mins=5;
-                seconds=0;
+                mins=0;
+                seconds=5;
                 done=document.getElementById("done");
                 done.innerHTML="Pomodoros done: "+pomos_done;
             } else {
                 on_break=false;
                 set_pomo();
-                mins=25;
-                seconds=0;
+                mins=0;
+                seconds=5;
             }
         } else {
             //decrement mins and set seconds to 60

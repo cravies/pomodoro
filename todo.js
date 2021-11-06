@@ -3,7 +3,7 @@ function new_task() {
     formdata = sanitize(document.getElementById('newtask').value);
     tasks= document.getElementById('tasks').innerHTML;
     tasks = tasks + "<input class='mycb' type='checkbox' id='"+ formdata + "'>";
-    tasks = tasks + "<label id='"+formdata+"' for='" + formdata + "'>" + formdata + "</label>";
+    tasks = tasks + "<label id='"+formdata+"' for='" + formdata + "'>" + formdata + "</label>" + "<br id='br"+formdata+"'>";
     document.getElementById('tasks').innerHTML = tasks;
 }
 
@@ -16,9 +16,17 @@ function tasks_done() {
             //remove label
             var label_id=inputs[i].id;
             document.getElementById(label_id).remove();
+            //remove line break
+            var line_break_label="br"+label_id;
             //remove input
             inputs[i].remove();
             document.getElementById(label_id).remove();
+            document.getElementById(line_break_label).remove();
+            //add to tasks done
+            var node = document.createElement('li');
+            node.appendChild(document.createTextNode(label_id));
+            document.querySelector('ul').appendChild(node);
+
         }
     }
 }
