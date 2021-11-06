@@ -5,5 +5,4 @@ Designed for my own personal use.
 No ads, trackers, or web bloat.
 
 Todo: 
-- [ ] Make text / elements bigger in page (page looks empty)
-- [ ] Make checked tasks appear in a "tasks done" list.
+- [ ] Default tasks
